@@ -1,4 +1,5 @@
 import lib.comp_metrics_calculator as cmc
+import sys
 
 if __name__ == '__main__':
     script = sys.argv[0]
