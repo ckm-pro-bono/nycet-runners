@@ -6,7 +6,7 @@ class ExperimentByVoterFormatter():
         self.election_dates = {(pd.to_datetime(row['start']), pd.to_datetime(row['end'])): (row['year'],row['election']) \
                                 for idx,row in election_dates.iterrows()}
         self.c_types = contact_types.method
-        self.exp_results_df = table_puller_obj.experiments[table_puller_obj.experiments >= 2016]
+        self.exp_results_df = table_puller_obj.experiments#[table_puller_obj.experiments >= 2016]
         self.contacts_df = table_puller_obj.contact_history
         self.persons = table_puller_obj.persons
         self.elections = self.exp_results_df.election_w_year.unique()
